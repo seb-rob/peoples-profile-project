@@ -1,10 +1,18 @@
 import reactDom from "react-dom";
 
-const Greet = () => {
-  return <h1>Hello People</h1>
+//component import
+import PersonComponent from "./components/Person";
+
+
+const PersonList = () => {
+  return(
+    <section>
+      <PersonComponent />
+    </section>
+  )
 }
 
 reactDom.render(
-  <Greet />,
+  <PersonList />,
   document.getElementById("root")
 )
